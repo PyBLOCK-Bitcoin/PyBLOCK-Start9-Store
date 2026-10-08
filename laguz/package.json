@@ -1,0 +1,12 @@
+{
+  "name": "laguz-startos",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf ./javascript && ncc build startos/index.ts -o ./javascript",
+    "prettier": "prettier --write startos",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@start9labs/start-sdk": "2.0.9"
+  }
+}
